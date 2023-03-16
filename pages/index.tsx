@@ -13,8 +13,16 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.overlay}></div>
-        <video autoPlay loop muted className={styles.video}>
-          <source src="/heneral_vid.mp4" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/poster.png"
+          className={styles.video}
+        >
+          <source src="/heneral_vid.mp4" type="video/mp4" />
+          <source src="/heneral_vid.webm" type="video/webm" />
         </video>
         <div className={styles.content}>
           <img
